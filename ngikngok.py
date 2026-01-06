@@ -75,7 +75,7 @@ while True:
         u.start()
         t.start()
         s.start()
-    except KeyboardInterrupt:
+    except KeyboardInterrupt():
         print(f"Stopping Flood!")
         sys.exit()
     except socket.error, msg:
