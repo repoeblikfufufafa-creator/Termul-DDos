@@ -79,5 +79,5 @@ while True:
         print(f"Stopping Flood!")
         sys.exit()
     except socket.error, msg:
-        print "Socket Couldn't Connect"
+        print(f"Socket Couldn't Connect")
         sys.exit()
