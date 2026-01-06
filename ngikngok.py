@@ -7,7 +7,7 @@ import random
 import socket
 
 if len(sys.argv) < 4:
-    print("")
+    print("top-ddos")
     sys.exit("Usage: python "+sys.argv[0]+" <ip> <port> <size>")
 
 ip = sys.argv[1]
